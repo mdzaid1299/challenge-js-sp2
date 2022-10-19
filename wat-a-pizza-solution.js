@@ -147,6 +147,7 @@ console.log("Total amount for the main meal ordered : "+result)
 //Write function to calculate the final amount after discount
 
 let afterDisc = 0;
+let totBill = 0;
 function calculateDiscount(menu){
     let filterResult = menu.filter(item=> {
         if(totBill > 50){
@@ -171,6 +172,5 @@ function calculatetotalBill(menu){
      } , 0);   
      return sum;
     } 
-    let totBill = calculatetotalBill(menu);
-    console.log("Total bill of all the item : "+totBill);
-/
+    let totBill1 = calculatetotalBill(menu);
+    console.log("Total bill of all the item : "+totBill1);
